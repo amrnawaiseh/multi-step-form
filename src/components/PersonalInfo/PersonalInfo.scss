@@ -1,0 +1,44 @@
+.personal-info {
+    display: flex;
+    flex-direction: column;
+
+    & label {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        & .required {
+            color: red;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        & .label-header {
+            margin: 0;
+        }
+    }
+
+    & input {
+        height: 50px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        cursor: grab;
+        border: 1px solid grey;
+        padding: 0 15px;
+        font-weight: 500;
+        font-size: 15px;
+        outline: none;
+
+        &:focus {
+            border: 1px solid #8015c2;
+        }
+
+        &::placeholder {
+            padding: 10px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+@media (max-width: 850px) {}

@@ -1,0 +1,49 @@
+.plan-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+.plan-card .plan-card-icon {
+  margin-bottom: 50px;
+}
+.plan-card .plan-card-title {
+  margin-bottom: 10px;
+}
+.plan-card .plan-card-price {
+  margin-bottom: 10px;
+}
+.plan-card .plan-card-discount {
+  font-size: 12px;
+  color: gray;
+}
+
+.plan-card:hover {
+  background-color: rgba(83, 10, 164, 0.0509803922);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(83, 10, 164, 0.0509803922);
+  border: 1px solid #8015c2;
+}
+
+@media (max-width: 850px) {
+  .plan-card {
+    width: auto;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .plan-card .plan-card-icon {
+    margin: 0;
+  }
+  .plan-card .plan-card-price {
+    color: gray;
+  }
+  .plan-card .plan-card-discount {
+    color: black;
+  }
+}/*# sourceMappingURL=planCard.css.map */

@@ -1,0 +1,39 @@
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}
+.personal-info label {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.personal-info label .required {
+  color: red;
+  margin: 0;
+  font-weight: 500;
+}
+.personal-info label .label-header {
+  margin: 0;
+}
+.personal-info input {
+  height: 50px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  cursor: grab;
+  border: 1px solid grey;
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 15px;
+  outline: none;
+}
+.personal-info input:focus {
+  border: 1px solid #8015c2;
+}
+.personal-info input::-moz-placeholder {
+  padding: 10px;
+  font-weight: 500;
+}
+.personal-info input::placeholder {
+  padding: 10px;
+  font-weight: 500;
+}/*# sourceMappingURL=PersonalInfo.css.map */

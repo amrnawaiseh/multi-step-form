@@ -1,0 +1,36 @@
+.data-container {
+  height: 100%;
+  text-align: center;
+}
+.data-container .logout-btn {
+  background-color: #c8a1dd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.data-container h1 {
+  text-align: center;
+  color: darkgray;
+}
+.data-container table {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  border: 1px solid black;
+  text-align: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.data-container table th,
+.data-container table td {
+  width: 5%;
+  list-style: none;
+}
+.data-container table th ul,
+.data-container table td ul {
+  list-style: none;
+}
+.data-container table thead {
+  background-color: #c8a1dd;
+}/*# sourceMappingURL=Dashboard.css.map */

@@ -1,0 +1,48 @@
+.summary-info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background: aliceblue;
+  border-radius: 15px;
+  padding: 0 30px;
+}
+.summary-info .plan-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 15px;
+}
+.summary-info .plan-summary p:nth-of-type(1),
+.summary-info .plan-summary .plan-price {
+  font-weight: 700;
+}
+.summary-info .plan-summary p:nth-of-type(2) {
+  text-decoration: underline;
+}
+.summary-info .addon-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px 0 30px;
+}
+.total-summary p:nth-of-type(2) {
+  color: #5400ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width: 850px) {
+  .total-summary p:nth-of-type(2) {
+    font-size: 15px;
+  }
+}
+
+.gray-font {
+  color: darkgray;
+}/*# sourceMappingURL=summary.css.map */

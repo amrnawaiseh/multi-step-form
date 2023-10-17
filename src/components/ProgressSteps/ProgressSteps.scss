@@ -1,0 +1,38 @@
+.progress-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .progress-step-num {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .progress-disc-num {
+        margin: 5px 0;
+        color: lightgray;
+        font-size: 15px;
+    }
+
+    .progress-disc-info {
+        margin: 0;
+        color: white;
+        font-weight: 700;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .progress-disc {
+        display: none;
+    }
+}

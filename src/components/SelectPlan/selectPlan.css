@@ -1,0 +1,57 @@
+.select-plan {
+  display: flex;
+  flex-direction: column;
+}
+.select-plan .plan-cards-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+}
+@media (max-width: 850px) {
+  .select-plan .plan-cards-container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+.select-plan .plan-switcher {
+  display: flex;
+  gap: 20px;
+  height: 65px;
+  background-color: rgba(83, 10, 164, 0.0509803922);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.select-plan .plan-switcher .toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+}
+.select-plan .plan-switcher .toggle-switch input[type=checkbox] {
+  display: none;
+}
+.select-plan .plan-switcher .toggle-switch .toggle-switch-background {
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 76%;
+  height: 73%;
+  background-color: #0932a5;
+  border-radius: 20px;
+}
+.select-plan .plan-switcher .toggle-switch .toggle-switch-background .toggle-switch-handle {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 23px;
+  height: 23px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.select-plan .plan-switcher .toggle-switch input[type=checkbox]:checked + .toggle-switch-background .toggle-switch-handle {
+  transform: translateX(30px);
+}/*# sourceMappingURL=selectPlan.css.map */

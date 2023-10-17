@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#root {
+  background-color: hsl(217, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+}
+.form .form-wrapper {
+  width: 100%;
+}
+.form .progress-container {
+  background-image: url(/src/assets/bg-sidebar-desktop.svg);
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 15px;
+}
+.form .progress-container .progress {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 35px 0;
+  padding: 0 35px;
+}
+.form .progress-container .log-in-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+.form .progress-container .log-in-container input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+}
+.form .progress-container .log-in-container p {
+  text-align: center;
+  color: white;
+}
+.form .progress-container .log-in-container .admin-btn {
+  padding: 10px 5px;
+  color: white;
+  background-color: #7773f4;
+  border-radius: 10px;
+  border: 1px solid darkgrey;
+}
+.form .form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  width: 100%;
+  gap: 50px;
+}
+.form .form-container .form-body {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 0 100px 50px 100px;
+}
+.footer .next-btn {
+  background-color: #302d8d;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+}
+.footer .next-btn:hover {
+  cursor: pointer;
+}
+.footer .back-btn {
+  background: white;
+  border: none;
+  color: grey;
+}
+.footer .back-btn:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.gray-text {
+  color: grey;
+}
+
+@media (max-width: 850px) {
+  #root {
+    background-color: hsl(217, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    font-size: smaller;
+  }
+  button {
+    font-size: 12px;
+  }
+  input {
+    font-size: 12px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form .progress-container {
+    background-image: url(/src/assets/bg-sidebar-mobile.svg);
+    margin: 0;
+    border-radius: 0;
+    height: 300px;
+  }
+  .form .progress-container .progress {
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+  .form .progress-container .log-in-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .form .progress-container .log-in-container input {
+    margin: 0;
+    width: 25%;
+  }
+  .form .progress-container .log-in-container p {
+    margin: 0;
+    width: 45px;
+    text-align: center;
+  }
+  .form .form-wrapper {
+    background-color: hsl(217, 100%, 97%);
+  }
+  .form .form-wrapper .footer {
+    position: absolute;
+    padding: 20px;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+  }
+  .form .form-wrapper .form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: white;
+    margin: -100px 15px 0;
+    width: auto;
+    border-radius: 15px;
+    gap: 0;
+  }
+  .form .form-wrapper .form-container .form-body {
+    height: auto;
+  }
+}/*# sourceMappingURL=Form.css.map */

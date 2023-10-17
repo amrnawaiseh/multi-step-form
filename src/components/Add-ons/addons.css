@@ -1,0 +1,52 @@
+.add-on-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.3019607843);
+  border-radius: 8px;
+  padding: 40px 30px;
+}
+.add-on-card:has(input:checked) {
+  background-color: rgba(83, 10, 164, 0.0509803922);
+}
+.add-on-card:hover {
+  background-color: rgba(83, 10, 164, 0.0509803922);
+  cursor: pointer;
+}
+.add-on-card .add-on-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-on-card .add-on-price {
+  color: #5400ff;
+}
+.add-on-card .add-on-checkbox {
+  height: 20px;
+  width: 20px;
+  margin-right: 30px;
+}
+.add-on-card .add-on-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.add-on-card .add-on-disc {
+  font-size: 15px;
+}
+
+@media (max-width: 850px) {
+  .add-on-card {
+    padding: 0px 20px;
+  }
+  .add-on-card .add-on-checkbox {
+    margin-right: 15px;
+  }
+  .add-on-card .add-on-title {
+    margin-bottom: 5px;
+  }
+  .add-on-card .add-on-disc {
+    font-size: small;
+  }
+}/*# sourceMappingURL=addons.css.map */

@@ -1,0 +1,126 @@
+.confirmation {
+    width: 1100px;
+    height: 73%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+
+    .progress-container {
+        background-image: url(/src/assets/bg-sidebar-desktop.svg);
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        margin: 15px;
+
+        .progress {
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 35px 0;
+            padding: 0 35px;
+        }
+
+        .log-in-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 50px;
+
+            & input {
+                margin-bottom: 20px;
+                border-radius: 5px;
+                height: 35px;
+                border: none;
+            }
+
+            & p {
+                text-align: center;
+                color: white;
+            }
+
+            .admin-btn {
+                padding: 10px 5px;
+                color: white;
+                background-color: #7773f4;
+                border-radius: 10px;
+                border: 1px solid darkgrey;
+            }
+        }
+    }
+
+    .success-container {
+        padding: 0 100px;
+
+        .confirm-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .confirm-text {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 850px) {
+
+    .confirmation {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        background-color: transparent;
+
+        .progress-container {
+            background-image: url(/src/assets/bg-sidebar-mobile.svg);
+            margin: 0;
+            border-radius: 0;
+            height: 300px;
+
+            .progress {
+                height: auto;
+                flex-direction: row;
+                justify-content: center;
+                padding: 0;
+            }
+
+            .log-in-container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 15px;
+
+                & input {
+                    margin: 0;
+                    width: 25%;
+                }
+            }
+        }
+
+        .success-container {
+            padding: 0 20px;
+
+            .confirm-container {
+                background-color: white;
+                border-radius: 20px;
+                height: 400px;
+                margin-top: -100px;
+                padding: 0 20px;
+            }
+        }
+
+
+    }
+
+}
