@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import admin from "../data/admin.json";
 import pageInfo from "../data/pageInfo.json";
 
-function Form({ toggleComponent, setIsAdmin }) {
+function Form({ toggleComponent, setIsAdmin, isAdmin }) {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
@@ -32,6 +32,7 @@ function Form({ toggleComponent, setIsAdmin }) {
   const [emailValidity, setEmailValidity] = useState(false);
   const [nameValidity, setNameValidity] = useState(false);
   const [phoneValidity, setPhoneValidity] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     setStepValidate(nameValidity && emailValidity && phoneValidity);
@@ -103,9 +104,14 @@ function Form({ toggleComponent, setIsAdmin }) {
 
   const handleAdminLogin = (e) => {
     e.preventDefault();
-    admin.email = "amr.nawaiseh@sociumtech.com";
-    admin.password = "123456789";
-    if (userEmail == admin.email && userPassword == admin.password) {
+    const error =
+      userEmail === admin.email && userPassword === admin.password
+        ? ""
+        : "Incorrect E-Mail or password";
+
+    setErrorMessage(error);
+
+    if (!error) {
       setIsAdmin(true);
       navigate("/admin-dashboard");
     }
@@ -134,6 +140,7 @@ function Form({ toggleComponent, setIsAdmin }) {
             onChange={handlePassword}
             type="password"
           />
+          {errorMessage && <div className="error-msg">{errorMessage}</div>}
           <button type="submit" className="admin-btn">
             login
           </button>

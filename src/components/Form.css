@@ -62,6 +62,10 @@ button {
   text-align: center;
   color: white;
 }
+.form .progress-container .log-in-container .error-msg {
+  color: red;
+  margin-bottom: 15px;
+}
 .form .progress-container .log-in-container .admin-btn {
   padding: 10px 5px;
   color: white;

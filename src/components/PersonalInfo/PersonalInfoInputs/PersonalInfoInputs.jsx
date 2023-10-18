@@ -10,13 +10,34 @@ function PersonalInfoInputs({
   checkValidity,
   validity,
 }) {
+  const errorMsgHandler = (title) => {
+    if (title == "Name") {
+      return (
+        <p className="required">
+          This field is required, please enter a valid name!
+        </p>
+      );
+    }
+    if (title == "Email Address") {
+      return (
+        <p className="required">
+          This field is required, please enter a valid Email address!
+        </p>
+      );
+    } else {
+      return (
+        <p className="required">
+          This field is required, please enter a valid phone number!
+        </p>
+      );
+    }
+  };
+
   return (
     <>
       <label htmlFor={id}>
         <p className="label-header">{title}</p>
-        {checkValidity && !validity && (
-          <p className="required">This field is required</p>
-        )}
+        {checkValidity && !validity && errorMsgHandler(title)}
       </label>
       <input
         style={{

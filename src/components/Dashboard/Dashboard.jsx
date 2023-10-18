@@ -10,15 +10,14 @@ function Dashboard({ isAdmin }) {
     navigate("/");
   };
 
-  if (!isAdmin) {
-    handleLogOut();
-  }
-
   useEffect(() => {
     const storedData = localStorage.getItem("formData");
     if (storedData) {
       const parsedData = JSON.parse(storedData);
       setDataArray(parsedData);
+    }
+    if (!isAdmin) {
+      handleLogOut();
     }
   }, []);
 

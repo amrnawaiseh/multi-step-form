@@ -102,4 +102,8 @@
     margin-top: -100px;
     padding: 0 20px;
   }
+}
+.error-msg {
+  color: red;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=confirmation.css.map */

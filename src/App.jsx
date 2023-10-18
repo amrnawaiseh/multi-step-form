@@ -19,7 +19,11 @@ function App() {
           path="/"
           element={
             showForm ? (
-              <Form toggleComponent={toggleComponent} setIsAdmin={setIsAdmin} />
+              <Form
+                toggleComponent={toggleComponent}
+                setIsAdmin={setIsAdmin}
+                isAdmin={isAdmin}
+              />
             ) : (
               <Confirmation setIsAdmin={setIsAdmin} />
             )

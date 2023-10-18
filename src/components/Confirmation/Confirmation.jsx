@@ -10,6 +10,7 @@ import pageInfo from "../../data/pageInfo.json";
 function Confirmation({ setIsAdmin }) {
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
+  const [errorMsg, setError] = useState("");
 
   const navigate = useNavigate();
 
@@ -23,9 +24,14 @@ function Confirmation({ setIsAdmin }) {
 
   const handleAdminLogin = (e) => {
     e.preventDefault();
-    admin.email = "amr.nawaiseh@sociumtech.com";
-    admin.password = "123456789";
-    if (userEmail == admin.email && userPassword == admin.password) {
+    const error =
+      userEmail === admin.email && userPassword === admin.password
+        ? ""
+        : "Incorrect E-Mail or password";
+
+    setError(error);
+
+    if (!error) {
       setIsAdmin(true);
       navigate("/admin-dashboard");
     }
@@ -54,6 +60,7 @@ function Confirmation({ setIsAdmin }) {
             onChange={handlePassword}
             type="password"
           />
+          {errorMsg && <div className="error-msg">{errorMsg}</div>}
           <button type="submit" className="admin-btn">
             login
           </button>

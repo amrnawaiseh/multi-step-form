@@ -67,6 +67,11 @@ button {
                 color: white;
             }
 
+            .error-msg {
+                color: red;
+                margin-bottom: 15px;
+            }
+
             .admin-btn {
                 padding: 10px 5px;
                 color: white;
@@ -75,6 +80,7 @@ button {
                 border: 1px solid darkgrey;
             }
         }
+
     }
 
     .form-container {
