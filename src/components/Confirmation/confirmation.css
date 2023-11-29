@@ -48,6 +48,10 @@
   border-radius: 10px;
   border: 1px solid darkgrey;
 }
+.confirmation .progress-container .log-in-container .error-msg {
+  color: red;
+  margin-bottom: 15px;
+}
 .confirmation .success-container {
   padding: 0 100px;
 }
@@ -87,10 +91,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+    position: relative;
   }
   .confirmation .progress-container .log-in-container input {
     margin: 0;
     width: 25%;
+  }
+  .confirmation .progress-container .log-in-container .error-msg {
+    position: fixed;
+    top: 165px;
   }
   .confirmation .success-container {
     padding: 0 20px;
